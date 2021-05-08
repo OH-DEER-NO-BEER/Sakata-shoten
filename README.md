@@ -7,12 +7,14 @@
 
 ## 要件定義
 - 開発環境
-Docker wtih Ubuntu
+  - Docker wtih Ubuntu
+  - IDEは自由
+  - Git
 
 - 開発言語／ツール
-View: Kotlin(iOS, Android Native), React(TypeScript)
-Controller: TypeScript (Node.js -> Express)
-Model: TypeScript (Node.js -> Express)
+  - View: Kotlin(iOS, Android Native), React(TypeScript)
+  - Controller: TypeScript (Node.js -> Express)
+  - Model: TypeScript (Node.js -> Express)
 
 ## 実装の手法
 
