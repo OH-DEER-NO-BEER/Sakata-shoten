@@ -15,4 +15,7 @@ services:
     image: sakata-shoten
     volumes: 
       - "./:/var/Sakata-shoten
+    depends_on:
+      - mysql
+
 
