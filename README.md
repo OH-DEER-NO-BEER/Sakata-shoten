@@ -10,15 +10,16 @@
 
 -   開発環境
 
-    -   Docker wtih Ubuntu
+    -   Docker 
     -   IDE は自由
     -   Git
 
 -   開発言語／ツール
     -   View: Kotlin(iOS, Android Native), React(TypeScript)
-    -   Controller: TypeScript (Node.js -> Express)
-    -   Model: TypeScript (Node.js -> Express)
+    -   Backend: Go lang 
 
+-   関連モジュール
+    - [内部処理](https://github.com/OH-DEER-NO-BEER/sakata-shoten-common)
 ## 実装の手法
 
 ## Description
