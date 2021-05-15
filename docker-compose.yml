@@ -1,20 +1,21 @@
-version: '3'
+version: "3"
 services:
-  mysql:
-    image: mysql:5.7
-    ports:
-      - "3306:3306"
-    volumes:
-      - "./docker/mysql:/docker-entrypoint-initdb.d"
-    environment:
-      - MYSQL_ROOT_PASSWORD=take_care
+    mysql:
+        image: mysql:5.7
+        ports:
+            - "3306:3306"
+        volumes:
+            - "./docker/mysql:/docker-entrypoint-initdb.d"
+        environment:
+            MYSQL_ROOT_PASSWORD: take_care
+            MYSQL_USER: sakata
+            MYSQL_PASSWORD: take_care
 
-  web:
-    build: ./docker
-    image: sakata-shoten
-    tty: true
-    volumes: 
-      - "./:/var/Sakata-shoten"
-    depends_on:
-      - mysql
-
+    web:
+        build: ./docker
+        image: sakata-shoten
+        tty: true
+        volumes:
+            - "./:/var/Sakata-shoten"
+        depends_on:
+            - mysql

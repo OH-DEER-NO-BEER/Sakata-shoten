@@ -8,4 +8,5 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN mkdir -p /var/Sakata-shoten
 RUN apt update
 RUN apt install -y wget && apt install -y vim && apt install -y git && apt install -y nodejs npm
-RUN npm install express --save &&  npm install react --save && npm install mysql --save
+RUN npm init
+RUN npm install typescript --save && express --save &&  npm install react --save && npm install mysql --save
